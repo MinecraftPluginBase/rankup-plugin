@@ -31,6 +31,8 @@ public class CommandRankup implements CommandExecutor {
         /* if (economy.has(commandSender, nextRank.getPrice()) { } */
 
         UserRankupEvent event = new UserRankupEvent(user, currentRank, nextRank);
+        event.call();
+        
         if (event.isCancelled()) return false;
 
         nextRank = event.getNewRank();
