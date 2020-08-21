@@ -5,6 +5,7 @@ import com.google.common.collect.Maps;
 import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.plugin.Plugin;
 
+import java.util.List;
 import java.util.Map;
 
 public class RankLoader {
@@ -27,13 +28,15 @@ public class RankLoader {
                     String longPrefix = configurationSection.getString(key + ".prefix.long");
                     int position = configurationSection.getInt(key + ".position", 1);
                     double price = configurationSection.getDouble(key + ".price", 0);
+                    List<String> commands = configurationSection.getStringList(key + ".commands");
 
                     RANKS.put(position, new Rank(
                             name,
                             shortPrefix,
                             longPrefix,
                             position,
-                            price
+                            price,
+                            commands
                     ));
                 }
                 return RANKS;
