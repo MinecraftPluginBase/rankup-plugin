@@ -1,0 +1,14 @@
+ranks:
+  basic:
+    name: "Básico"
+    prefix:
+      short: "[B] "
+      long: "[Basic] "
+    position: 1
+  advanced:
+    name: "Avançado"
+    prefix:
+      short: "[A] "
+      long: "[Advanced] "
+    position: 2
+    price: 500

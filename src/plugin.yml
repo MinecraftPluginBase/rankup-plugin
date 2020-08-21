@@ -1,0 +1,7 @@
+name: Rankup
+version: 1.0.0
+main: com.github.viiictorxd.rankup.Rankup
+author: ViiictorXD
+website: http://github.com/ViiictorXD
+commands:
+  rankup:
