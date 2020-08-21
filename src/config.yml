@@ -4,11 +4,17 @@ ranks:
     prefix:
       short: "[B] "
       long: "[Basic] "
+    commands:
+      - "pex user {name} group remove {currentRank}"
+      - "pex user {name} group add {newRank}"
     position: 1
   advanced:
     name: "Avançado"
     prefix:
       short: "[A] "
       long: "[Advanced] "
+    commands:
+      - "pex user {name} group remove {currentRank}"
+      - "pex user {name} group add {newRank}"
     position: 2
     price: 500
